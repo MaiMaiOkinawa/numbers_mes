@@ -1,12 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap');
+
+:root {
+  --primary-yellow: #f8ff1c;
+  --primary-green: #50ffaf;
+  --primary-pink: #ff00f6;
+  --primary-purple: #9723c9;
+  --primary-black: #000000;
+}
 
 *{
     box-sizing: border-box;
 }
 
 body {
-    background-image: linear-gradient(90deg, #30DDCE, #30DDCC);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jost', Kokoro, sans-serif;
+    background-color: var(--primary-green);
+    color: var(--primary-black);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -21,15 +30,15 @@ h1 {
     margin-top: 4rem;
     margin-bottom: 0;
     padding: 0;
-    color: #FFF85F;
     font-size: 3rem;
+    color: #fff;
 }
 
 .btn {
-    background-color: #FFF85F ;
-    border-radius: 15px;
+    background-color: var(--primary-purple);
+    border-radius: 1rem;
     border: none;
-    color: #30DDCE;
+    color: #fff;
     margin: 1.2rem;
     padding: 2rem 2rem;
     font-size: 2rem;
@@ -44,5 +53,5 @@ h1 {
 .btn:focus {
     outline-style: solid;
     outline-width: 10px;
-    outline-color: #2A325B;
+    outline-color: var(--primary-yellow);
 }
